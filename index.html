@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBasket Dairy | Freshness Delivered</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Kavya<span>Dairy</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#dairy" class="nav-link">Dairy</a>
+                <a href="#chocolates" class="nav-link">Chocolates</a>
+                <a href="#snacks" class="nav-link">Snacks</a>
+                <a href="#cakes" class="nav-link">Cakes</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="main-content">
+
+        <!-- ===== PAGE 1: HOME ===== -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-bg"></div>
+                <div class="hero-content fade-in">
+                    <h1>Freshness You Can <span class="highlight">Trust</span></h1>
+                    <p>Your one-stop shop for daily dairy, premium chocolates, crispy snacks &amp; fresh cakes.</p>
+                    <a href="#dairy" class="btn-primary nav-link">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="categories-section section-padding">
+                <h2 class="section-title fade-in">What We Offer</h2>
+                <div class="category-grid">
+                    <div class="cat-card fade-in" onclick="navigateTo('dairy')">
+                        <img src="dairy&cold.png" alt="Dairy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cat-overlay"><h3>Dairy &amp; Drinks</h3></div>
+                    </div>
+                    <div class="cat-card fade-in" onclick="navigateTo('chocolates')">
+                        <img src="choco.png" alt="Chocolates" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cat-overlay"><h3>Chocolates</h3></div>
+                    </div>
+                    <div class="cat-card fade-in" onclick="navigateTo('snacks')">
+                        <img src="snacks.png" alt="Snacks" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cat-overlay"><h3>Snacks</h3></div>
+                    </div>
+                    <div class="cat-card fade-in" onclick="navigateTo('cakes')">
+                        <img src="cake1.png" alt="Cakes" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cat-overlay"><h3>Cakes</h3></div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer section-padding">
+                <div class="footer-grid">
+                    <div class="footer-box fade-in">
+                        <h3>Our Store</h3>
+                        <div class="shop-photo">
+                            <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80" alt="Store">
+                        </div>
+                    </div>
+                    <div class="footer-box fade-in">
+                        <h3>Visit Us</h3>
+                        <p>123 Main Street, Cityville, State 12345</p>
+                        <a href="tel:9511463720" class="btn-call">📞 Call Now</a>
+                        <div class="map-placeholder">📍 Google Maps</div>
+                    </div>
+                    <div class="footer-box fade-in">
+                        <h3>Reviews</h3>
+                        <div class="review-card"><div class="stars">★★★★★</div><p>"Best dairy in villege!"</p><span>- Satyam</span></div>
+                        <div class="review-card"><div class="stars">★★★★★</div><p>"Always fresh &amp; stocked."</p><span>- Roshni</span></div>
+                        <div class="review-card"><div class="stars">★★★★★</div><p>"Great chocolate collection."</p><span>- Aman</span></div>
+                    </div>
+                </div>
+                <div class="footer-bottom">&copy; 2026 Kavya Dairy. All rights reserved.</div>
+            </footer>
+        </section>
+
+        <!-- ===== PAGE 2: DAIRY ===== -->
+        <section id="dairy" class="page">
+            <div class="page-header"><h1 class="fade-in">Dairy &amp; Drinks</h1><p class="fade-in">Fresh every day.</p></div>
+            <div class="section-padding">
+                <h2 class="section-title fade-in">Fresh Dairy</h2>
+                <div class="product-grid" id="dairyGrid">
+                    <!-- Generated by JS -->
+                </div>
+
+                <h2 class="section-title fade-in" style="margin-top:4rem;">Cold Drinks</h2>
+                <div class="product-grid" id="coldDrinksGrid">
+                    <!-- Generated by JS -->
+                </div>
+
+                <h2 class="section-title fade-in" style="margin-top:4rem;">Energy Drinks</h2>
+                <div class="product-grid" id="energyGrid">
+                    <!-- Generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PAGE 3: CHOCOLATES ===== -->
+        <section id="chocolates" class="page dark-mode">
+            <div class="page-header"><h1 class="fade-in">Chocolates</h1><p class="fade-in">Indulge in sweetness.</p></div>
+            <div class="section-padding">
+                <div class="product-grid" id="chocoGrid">
+                    <!-- Generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PAGE 4: SNACKS ===== -->
+        <section id="snacks" class="page vibrant-mode">
+            <div class="page-header"><h1 class="fade-in">Snacks</h1><p class="fade-in">Crunchy &amp; tasty.</p></div>
+            <div class="section-padding">
+                <div class="product-grid" id="snackGrid">
+                    <!-- Generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PAGE 5: CAKES ===== -->
+        <section id="cakes" class="page">
+            <div class="page-header" style="background:#fff0e6;"><h1 class="fade-in">Fresh Cakes</h1><p class="fade-in">For every occasion.</p></div>
+            <div class="section-padding">
+                <div class="product-grid" id="cakeGrid">
+                    <!-- Generated by JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
